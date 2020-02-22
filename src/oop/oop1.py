@@ -20,7 +20,7 @@
 
 
 # Vehicle is the base class
-class Vehicle:
+class Vehicle():
     # Base class
     def __init__(self, name):
         self.name = name

@@ -22,8 +22,6 @@
 # Vehicle is the base class
 class Vehicle():
     # Base class
-    def __init__(self, name):
-        self.name = name
     pass
 
 # Flight vehicles, descended from Vehicle.
@@ -31,20 +29,14 @@ class Vehicle():
 
 class FlightVehicle(Vehicle):
     # Base of this tree
-    def __init__(self, name):
-        super().__init__(name)
     pass
 
 
 class Airplane(FlightVehicle):
-    def __init__(self, name):
-        super().__init__(name)
     pass
 
 
-class StarShip(FlightVehicle):
-    def __init__(self, name):
-        super().__init__(name)
+class Starship(FlightVehicle):
     pass
 
 # Ground Vehicles, descended from Vehicle
@@ -52,18 +44,12 @@ class StarShip(FlightVehicle):
 
 class GroundVehicle(Vehicle):
     # Base of this tree
-    def __init__(self, name):
-        super().__init__(name)
     pass
 
 
 class Car(GroundVehicle):
-    def __init__(self, name):
-        super().__init__(name)
     pass
 
 
 class Motorcycle(GroundVehicle):
-    def __init__(self, name):
-        super().__init__(name)
     pass
